@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>women's day</title>
+    <title>Graduation day</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css"
         integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -661,6 +661,75 @@
 }
 
     </style>
+    <style>
+    .body-letter {
+        background-color: #f0f8ff; /* Màu xanh nhạt thay vì hồng */
+    }
+    
+    .envelope {
+        background-color: #003366; /* Màu xanh đậm - màu học thuật */
+    }
+    
+    .envelope:before {
+        background-color: #003366;
+    }
+    
+    .card {
+        background-color: #f5f5f5; /* Màu trắng ngà cho bằng tốt nghiệp */
+    }
+    
+    .heart, .heart:before, .heart:after,
+    .one, .one:before, .one:after,
+    .two, .two:before, .two:after,
+    .three, .three:before, .three:after,
+    .four, .four:before, .four:after,
+    .five, .five:before, .five:after {
+        background-color: #ffd700; /* Màu vàng học thuật thay vì đỏ */
+    }
+    
+    .front {
+        border-right: 180px solid #002147;
+    }
+    
+    .front:before {
+        border-left: 300px solid #003366;
+    }
+    
+    text {
+        fill: #002147; /* Màu xanh đậm thay vì hồng */
+    }
+</style>
+<style>
+    /* Tạo nón tốt nghiệp đơn giản */
+    .heart {
+        background-color: #000;
+        transform: none;
+        border-radius: 5px 5px 0 0;
+        position: relative;
+    }
+    
+    .heart:before {
+        content: "";
+        background-color: #ffd700; /* Dây nón màu vàng */
+        border-radius: 0;
+        height: 5px;
+        width: 35px;
+        position: absolute;
+        top: 25px;
+        left: -2px;
+    }
+    
+    .heart:after {
+        content: "";
+        background-color: #000;
+        border-radius: 0;
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        top: -10px;
+        left: 10px;
+    }
+</style>
 </head>
 
 <body>
@@ -687,9 +756,9 @@
 
         <text dy="-2">
             <textPath style="font-family: fantasy;" xlink:href="#partialPath" startOffset="12">
-                🌹Happy Women's Day
-                🌹.........................................................................................................................................🌹From
-                NKD With Love!🌹
+                🎓Happy Graduation Day
+                🎓.........................................................................................................................................🎓From
+                NKD With Pride!🎓
             </textPath>
         </text>
 
@@ -872,7 +941,7 @@
                 <div class="envelope"></div>
                 <div class="front"></div>
                 <div class="card">
-                    <div class="text">Happy</br> Women's</br> Day!</div>
+                    <div class="text">Happy</br> Graduation</br> Day!</div>
                     <div class="heart"></div>
                 </div>
                 <div class="hearts">
@@ -1103,7 +1172,7 @@
         // .textLetter text h2
         let indexText = 0;
         let textLetter = document.querySelector('.textLetter h2');
-        const textLetterH2 = "Gửi các chị em!";
+        const textLetterH2 = "Chúc mừng tốt nghiệp!";
         let timoutTextLetter;
 
         function textCharLetter() {
@@ -1131,7 +1200,7 @@
         // content
         let indexTextContent = 0;
         let textLetterContent = document.querySelector('.contentLetter');
-        const textLetterP = "Hôm nay là ngày 08/03. Xin gửi lời chúc tới các chị em. Luôn vui vẻ, luôn hạnh phúc và luôn may mắn trong cuộc sống, ngày càng xinh đẹp. Xin gửi tất cả lời chúc tốt đẹp đến với mọi người.";
+        const textLetterP = "Hôm nay là một ngày đặc biệt - ngày bạn hoàn thành hành trình học tập và mở ra chương mới trong cuộc đời. Chúc bạn luôn vững bước trên con đường sự nghiệp, gặt hái nhiều thành công và hạnh phúc. Tương lai đang chờ đón bạn với vô vàn cơ hội tuyệt vời!";
         let timoutTextLetterContent;
         function textCharLetterContent() {
             if (indexTextContent < textLetterP.length) {
